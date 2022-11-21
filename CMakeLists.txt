@@ -9,9 +9,11 @@ set(CMAKE_ASM_NASM_COMPILE_OBJECT "<CMAKE_ASM_NASM_COMPILER> <INCLUDES> \
 
 set_source_files_properties(src/reverse_num.asm PROPERTIES COMPILE_FLAGS "-g -Fdwarf")
 set_source_files_properties(src/middle_char.asm PROPERTIES COMPILE_FLAGS "-g -Fdwarf")
+set_source_files_properties(src/maxp_array.asm PROPERTIES COMPILE_FLAGS "-g -Fdwarf")
 
 add_executable(cwasm
     src/main.c
     src/reverse_num.asm
     src/middle_char.asm
+    src/maxp_array.asm
 )
