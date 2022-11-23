@@ -12,6 +12,10 @@ extern void middle_char(const char* s, char* buf);
 // Completed: 21/11/2022
 extern int adjacent_elements_product(int* array, size_t size);
 
+// Started  : 23/11/2022
+// Completed: ----------
+extern int sqrdigs(int i);
+
 int main(int argc, char* argv[])
 {
     long long rnum = -123;
@@ -24,5 +28,8 @@ int main(int argc, char* argv[])
 
     // 21
     printf("Largest sum is %d\n", adjacent_elements_product((int[]){ 3, 6, -2, -5, 7, 3 }, 6));
+
+    int sqrd = 3212;
+    printf("Sqr Digits of %d is %d\n", sqrd, sqrdigs(sqrd));
     return 0;
 }
